@@ -1,27 +1,7 @@
 # HODL Project — RAG/Deep Learning Repo
 
-This repository reorganizes a Colab notebook (`hodl_project.py`) into a clean, modular Python project.
-It focuses on retrieval-augmented workflows (LangChain + Weaviate) and a Gradio UI for quick interaction.
+This repository creates a retrieval-augmented workflow (LangChain + Weaviate) for a student Q&A chatbot for the Hands on Deep Learning (15.773) class at MIT. It includes the generation of a Gradio UI for quick interaction.
 
-## Structure
-```
-.
-├── src/
-│   ├── __init__.py
-│   ├── app.py            # Gradio UI: index texts and query
-│   ├── config.py         # Env + paths
-│   ├── prompts.py        # format_docs, contextualized_question, answer
-│   ├── rag_pipeline.py   # splitter -> embeddings -> vector store -> retriever
-│   ├── text_utils.py     # normalize_text, clean_and_reduce_noise
-│   └── legacy/
-│       └── hodl_project_notebook.py  # original exported code (for reference)
-├── data/
-├── assets/
-├── notebooks/
-├── main.py               # CLI: --index, --serve
-├── requirements.txt
-└── README.md
-```
 
 ## Setup
 ```bash
@@ -42,7 +22,3 @@ export OPENAI_API_KEY=your_key_here
   ```
 
 Open your browser at the URL printed by Gradio.
-
-## Notes
-- The original notebook code is preserved in `src/legacy/`.
-- If your notebook included explicit TensorFlow/Keras training, we can add `src/model.py` and wire it in next.
