@@ -1,0 +1,11 @@
+gradio
+langchain
+langchain-experimental
+langchain-openai
+matplotlib
+nltk
+numpy
+pandas
+python-dotenv
+tensorflow
+weaviate-client
